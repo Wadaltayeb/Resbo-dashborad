@@ -1,0 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+body{
+  background-color: #001;
+  display: flex;
+}
+.title-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: blue;
+  gap: 160px;
+  border-radius: 10px;
+  margin: 20px 5px;
+}
+
+.content{
+  position: relative;
+  margin: 5px;
+  width: 100%;
+}
+.title-dash{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.title-dash .card{
+  background-color: #123;
+  height: 150px;
+  flex-basis: 150;
+  flex-grow: 1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.title-dash .card i{
+  font-size: 40px;
+}
+.title-dash .card .data{
+  text-align: center;
+}
+.title-dash .card .data span{
+  font-size: 30px;
+}
+
+.imgs-box{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  flex-shrink: 0;
+}
+.imgs-box img{
+  width: 100%;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile h2{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.menu{
+  background-color: #123;
+  width: 50px;
+  height: 160vh;
+  padding: 20px;
+  overflow: hidden;
+  transition: .5s;
+}
+.menu:hover {
+  width: 260px;
+}
+ul{
+  list-style: none;
+  position: relative;
+  height: 99%;
+}
+ul li a{
+  display: block;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: .5s;
+}
+ul li a:hover, .active, .title-dash .card:hover, td:hover{
+  background-color: #ffffff55;
+}
+.log-out{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.log-out a{
+   background-color: #a00;
+}
+ul li a i{
+  font-size: 25px;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+}
+td, th{
+  background-color: #123;
+  height: 40px;
+  border-radius: 8px;
+}
+th{
+  background-color: #0080ff;
+}
+.price, .count{
+  padding: 6px;
+  border-radius: 6px;
+}
+.price{
+  background-color: green;
+}
+.count{
+  background-color: gold;
+  color: #000;
+}
